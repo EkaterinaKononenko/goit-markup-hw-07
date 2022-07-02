@@ -614,9 +614,7 @@ img {
   width: 100%;
 }
 
-.container > .footer-join,
-.container > .footer-adress,
-.container > .subscription {
+.footer-container {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -624,7 +622,7 @@ img {
 }
 
 .footer-join {
-  margin-left: auto;
+  margin-left: 70px;
 }
 
 .adress-logo {
@@ -733,6 +731,10 @@ img {
   color: #ffffff;
   display: block;
   margin-bottom: 20px;
+}
+
+.join-list {
+  display: flex;
 }
 
 .join-item {
