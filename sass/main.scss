@@ -1,1 +1,16 @@
-@import "_header";
+@import "./utils/vars.scss";
+@import "./base/reset";
+@import "./base/common";
+@import "./utils/hidden";
+@import "./components/container.scss";
+@import "./components/btn";
+@import "./layout/header";
+@import "./components/decision";
+@import "./components/decision-title";
+@import "./layout/benefits";
+@import "./layout/works";
+@import "./layout/team";
+@import "./layout/client";
+@import "./layout/footer";
+@import "./layout/portfolio";
+@import "./components/modal";

@@ -1,4 +1,4 @@
-p,
+/*p,
 h1,
 h2,
 h3,
@@ -40,9 +40,9 @@ body {
 .link {
   list-style: none;
   text-decoration: none;
-}
+}*/
 /* ------------Header--------------------- */
-.page-header {
+/*.page-header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -161,13 +161,13 @@ body {
 .contacts-pic {
   fill: currentColor;
   margin-right: 10px;
-}
+}*/
 /*ul.contacts.link {
   color: #212121;
 }*/
 /* ------------------ MAIN---------------*/
 /*---------Section decision-------------*/
-.decision {
+/*.decision {
   text-align: center;
   height: 600px;
   padding: 200px 0;
@@ -183,9 +183,9 @@ body {
     url(../images/hero.jpg);
   margin: 0 auto;
   background-color: #c4c4c4;
-}
+}*/
 /*  background: var(--header-text-color);*/
-.decision-title {
+/*.decision-title {
   margin: 0 auto;
   font-weight: 900;
   font-size: 44px;
@@ -196,11 +196,11 @@ body {
   color: var(--main-bgd-color);
   max-width: 696px;
   outline: 1px solid transparent;
-}
+}*/
 /*.decision-title:hover {
   color: var(--main-color);
 }*/
-.decision-btn {
+/*.decision-btn {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -229,7 +229,7 @@ body {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
+}*/
 /*-----------------Section benefits----------------*/
 .benefits {
   width: 100%;
@@ -252,7 +252,8 @@ body {
   display: flex;
   flex-basis: calc(100% / 4 - 30px);
 }
-.visually-hidden {
+*/
+/*.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1039,11 +1040,7 @@ img {
 .modal-input:focus {
   border-color: #2196f3;
 }
-/*.checkbox-square {
-  width: 16px;
-  height: 15px;
-  margin-top: 25px;
-}*/
+
 .icon-check {
   width: 16px;
   height: 15px;
@@ -1169,10 +1166,6 @@ img {
 .checkbox-square:checked + .privacy .check-icon {
   fill: #ffffff;
 }
-.icon-check:checked + .privacy span {
-  background-color: #2196f3;
-  border: none;
-}
-.icon-check:checked + .privacy .check-icon {
-  fill: #ffffff;
+.checkbox-square:focus + .privacy span {
+  border-color: #2196f3;
 }
