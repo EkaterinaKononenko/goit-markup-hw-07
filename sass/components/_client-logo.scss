@@ -2,10 +2,11 @@
   width: 170px;
   height: 92px;
   margin-left: 30px;
+  &:first-child {
+    margin-left: 0;
+  }
 }
-.client__logo:first-child {
-  margin-left: 0;
-}
+
 .client__logo__item {
   fill: currentColor;
 }

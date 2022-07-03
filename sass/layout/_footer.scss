@@ -34,14 +34,14 @@
     250ms,
     cubic-bezier(0.4, 0, 0.2, 1)
   );
+  &:hover,
+  &:focus {
+    text-decoration-line: underline;
+    text-decoration-color: var(--main-color);
+    color: var(--main-color);
+  }
 }
 
-.adress__link:hover,
-.adress__link:focus {
-  text-decoration-line: underline;
-  text-decoration-color: var(--main-color);
-  color: var(--main-color);
-}
 .adress__link__mail {
   font-size: 14px;
   line-height: 2;
@@ -61,13 +61,14 @@
     250ms,
     cubic-bezier(0.4, 0, 0.2, 1)
   );
+  &:hover,
+  &:focus {
+    text-decoration-line: underline;
+    text-decoration-color: var(--main-color);
+    color: var(--main-color);
+  }
 }
-.adress__link__mail:hover,
-.adress__link__mail:focus {
-  text-decoration-line: underline;
-  text-decoration-color: var(--main-color);
-  color: var(--main-color);
-}
+
 .adress__link__phone {
   font-size: 14px;
   line-height: 2;
@@ -80,13 +81,14 @@
     250ms,
     cubic-bezier(0.4, 0, 0.2, 1)
   );
+  &:hover,
+  &:focus {
+    text-decoration-line: underline;
+    text-decoration-color: var(--main-color);
+    color: var(--main-color);
+  }
 }
-.adress__link__phone:hover,
-.adress__link__phone:focus {
-  text-decoration-line: underline;
-  text-decoration-color: var(--main-color);
-  color: var(--main-color);
-}
+
 .adress__list .adress__item {
   font-style: normal;
 }
@@ -117,10 +119,11 @@
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   margin-left: 10px;
+  &:first-child {
+    margin-left: 0;
+  }
 }
-.join__item:first-child {
-  margin-left: 0;
-}
+
 .join__link {
   display: flex;
   justify-content: center;
@@ -135,11 +138,12 @@
     250ms,
     cubic-bezier(0.4, 0, 0.2, 1)
   );
+  &:hover,
+  &:focus {
+    background-color: var(--main-color);
+  }
 }
-.join__link:hover,
-.join__link:focus {
-  background-color: var(--main-color);
-}
+
 .join__svg {
   display: block;
   fill: #ffffff;
@@ -181,12 +185,11 @@
     250ms,
     cubic-bezier(0.4, 0, 0.2, 1)
   );
-}
-.subscription__email:hover,
-.subscription__email:focus {
-  border-color: #2196f3;
-}
-.subscription__email::placeholder {
+  &:hover,
+  &:focus {
+    border-color: #2196f3;
+  }
+  &::placeholder {
   font-family: "Roboto";
   font-size: 16px;
   line-height: 1.25;
@@ -198,6 +201,9 @@
   width: 100%;
   height: 100%;
 }
+}
+
+
 
 .subscription__pic {
   fill: rgba(255, 255, 255, 1);
@@ -205,12 +211,13 @@
   height: 24px;
   display: flex;
   margin-left: 10px;
-}
-.subscription__pic::after {
+  &::after {
   content: "";
   display: flex;
   position: absolute;
 }
+}
+
 .subscription__form {
   display: flex;
   justify-content: space-between;

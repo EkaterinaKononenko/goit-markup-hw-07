@@ -29,12 +29,12 @@
     250ms,
     cubic-bezier(0.4, 0, 0.2, 1)
   );
-}
-.social-sites__link:hover,
-.social-sites__link:focus {
-  background-color: var(--main-color);
-  color: #ffffff;
-}
-.social-sites__icon {
-  fill: currentColor;
+  &:hover,
+  &:focus {
+    background-color: var(--main-color);
+    color: #ffffff;
+  }
+  .social-sites__icon {
+    fill: currentColor;
+  }
 }

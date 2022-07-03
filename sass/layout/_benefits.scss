@@ -4,10 +4,11 @@
 .benefits__list {
   display: block;
   display: flex;
+  &:last-child {
+    margin-right: 0;
+  }
 }
-.benefit__list:last-child {
-  margin-right: 0;
-}
+
 .benefits__title {
   font-weight: 700;
   font-size: 14px;
@@ -28,9 +29,6 @@
   outline: 1px solid transparent;
   display: block;
   flex-basis: calc(100% / 4 - 30px);
-}
-.zero {
-  margin-right: 0;
 }
 .benefits__item {
   margin-right: 30px;
