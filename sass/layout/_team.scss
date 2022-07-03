@@ -19,10 +19,13 @@
   display: block;
   margin-bottom: 50px;
   outline: 1px solid transparent;
-
-  transition-property: text-decoration-line, text-decoration-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(
+    text-decoration-color,
+    text-decoration-line,
+    null,
+    250ms,
+    cubic-bezier(0.4, 0, 0.2, 1)
+  );
 }
 .team__title:hover,
 .team__title:focus {
@@ -66,9 +69,13 @@
   height: auto;
   display: block;
   margin-bottom: 10px;
-  transition-property: text-decoration-line, text-decoration-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(
+    text-decoration-color,
+    text-decoration-line,
+    null,
+    250ms,
+    cubic-bezier(0.4, 0, 0.2, 1)
+  );
 }
 .team__title__participant:hover,
 .team__title__participant:focus {
@@ -84,9 +91,13 @@
   color: var(--contacts-color);
   display: block;
   margin-bottom: 16px;
-  transition-property: text-decoration-line, text-decoration-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(
+    text-decoration-color,
+    text-decoration-line,
+    null,
+    250ms,
+    cubic-bezier(0.4, 0, 0.2, 1)
+  );
 }
 .team__text:hover,
 .team__text:focus {

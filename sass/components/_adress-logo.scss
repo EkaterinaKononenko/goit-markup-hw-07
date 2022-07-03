@@ -7,9 +7,13 @@
   letter-spacing: 0.03em;
   display: block;
   margin-bottom: 20px;
-  transition-property: text-decoration-color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(
+    text-decoration-color,
+    border,
+    null,
+    250ms,
+    cubic-bezier(0.4, 0, 0.2, 1)
+  );
 }
 .adress__logo:hover,
 .adress__logo:focus {

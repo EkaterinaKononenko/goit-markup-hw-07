@@ -11,9 +11,13 @@
   align-items: center;
   display: block;
   margin-right: 93px;
-  transition-property: text-decoration-color, border, border-width;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(
+    text-decoration-color,
+    border,
+    border-width,
+    250ms,
+    cubic-bezier(0.4, 0, 0.2, 1)
+  );
 }
 .nav__logo:hover,
 .nav__logo:focus {
