@@ -1,14 +1,14 @@
 .benefits {
   width: 100%;
 }
-.benefits-list {
+.benefits__list {
   display: block;
   display: flex;
 }
-.benefits-list:last-child {
+.benefit__list:last-child {
   margin-right: 0;
 }
-.benefits-title {
+.benefits__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -19,7 +19,7 @@
   display: flex;
   flex-basis: calc(100% / 4 - 30px);
 }
-.benefits-text {
+.benefits__text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--contacts-color);
@@ -32,10 +32,10 @@
 .zero {
   margin-right: 0;
 }
-.benefits-points {
+.benefits__item {
   margin-right: 30px;
 }
-.benefits-box {
+.benefits__wrapper {
   margin-bottom: 30px;
   display: flex;
   background: var(--main-team-color);
@@ -45,6 +45,6 @@
   width: 270px;
   height: 120px;
 }
-.benefits-points:last-child {
+.benefits__item:last-child {
   margin-right: 0;
 }

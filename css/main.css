@@ -90,16 +90,58 @@ body {
   border-radius: 4px;
 }
 
-.page-header {
+.portfolio-btn {
+  font-family: inherit;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+  background: #f5f4fa;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 6px 22px;
+  border: none;
+  transition-property: background, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main-nav {
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--main-bgd-color);
+  background: var(--main-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.subscription-btn {
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   display: flex;
+  position: relative;
+  cursor: pointer;
+  background: #2196f3;
+  border: none;
+  margin-left: 12px;
   align-items: center;
+  justify-content: center;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription-btn:hover,
+.subscription-btn:focus {
+  background: #188ce8;
 }
 
 .logo-nav {
@@ -117,6 +159,63 @@ body {
   transition-property: text-decoration-color, border, border-width;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-logo {
+  width: 170px;
+  height: 92px;
+  margin-left: 30px;
+}
+
+.client-logo:first-child {
+  margin-left: 0;
+}
+
+.client-logo-item {
+  fill: currentColor;
+}
+
+.adress-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--main-color);
+  letter-spacing: 0.03em;
+  display: block;
+  margin-bottom: 20px;
+  transition-property: text-decoration-color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adress-logo:hover,
+.adress-logo:focus {
+  text-decoration-color: var(--main-color);
+  border: 1px solid #ececec;
+}
+
+.adress-logo-decor {
+  color: var(--main-bgd-color);
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.page-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 .site-nav .contacts {
@@ -226,19 +325,6 @@ body {
   margin-right: 10px;
 }
 
-.decision {
-  text-align: center;
-  height: 600px;
-  padding: 200px 0;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  max-width: 1600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-  margin: 0 auto;
-  background-color: #c4c4c4;
-}
-
 .decision-title {
   margin: 0 auto;
   font-weight: 900;
@@ -252,20 +338,33 @@ body {
   outline: 1px solid transparent;
 }
 
+.decision {
+  text-align: center;
+  height: 600px;
+  padding: 200px 0;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  max-width: 1600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  margin: 0 auto;
+  background-color: #c4c4c4;
+}
+
 .benefits {
   width: 100%;
 }
 
-.benefits-list {
+.benefits__list {
   display: block;
   display: flex;
 }
 
-.benefits-list:last-child {
+.benefit__list:last-child {
   margin-right: 0;
 }
 
-.benefits-title {
+.benefits__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -277,7 +376,7 @@ body {
   flex-basis: calc(25% - 30px);
 }
 
-.benefits-text {
+.benefits__text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--contacts-color);
@@ -292,11 +391,11 @@ body {
   margin-right: 0;
 }
 
-.benefits-points {
+.benefits__item {
   margin-right: 30px;
 }
 
-.benefits-box {
+.benefits__wrapper {
   margin-bottom: 30px;
   display: flex;
   background: var(--main-team-color);
@@ -307,7 +406,7 @@ body {
   height: 120px;
 }
 
-.benefits-points:last-child {
+.benefits__item:last-child {
   margin-right: 0;
 }
 
@@ -565,16 +664,6 @@ img {
   margin-top: 50px;
 }
 
-.client-logo {
-  width: 170px;
-  height: 92px;
-  margin-left: 30px;
-}
-
-.client-logo:first-child {
-  margin-left: 0;
-}
-
 .client-link {
   width: 100%;
   height: 100%;
@@ -590,10 +679,6 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-logo-item {
-  fill: currentColor;
-}
-
 .client-link:hover,
 .client-link:focus {
   border-color: #2196f3;
@@ -605,7 +690,6 @@ img {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  height: 252px;
   letter-spacing: 0.03em;
   background: var(--header-text-color);
   padding-top: 60px;
@@ -614,39 +698,8 @@ img {
   width: 100%;
 }
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: flex-start;
-}
-
 .footer-join {
   margin-left: 70px;
-}
-
-.adress-logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--main-color);
-  letter-spacing: 0.03em;
-  display: block;
-  margin-bottom: 20px;
-  transition-property: text-decoration-color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.adress-logo:hover,
-.adress-logo:focus {
-  text-decoration-color: var(--main-color);
-  border: 1px solid #ececec;
-}
-
-.adress-logo-decor {
-  color: var(--main-bgd-color);
 }
 
 .adress-details {
@@ -825,35 +878,6 @@ img {
   height: 100%;
 }
 
-.subscription-btn {
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  width: 200px;
-  height: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  display: flex;
-  position: relative;
-  cursor: pointer;
-  background: #2196f3;
-  border: none;
-  margin-left: 12px;
-  align-items: center;
-  justify-content: center;
-  transition-property: background;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.subscription-btn:hover,
-.subscription-btn:focus {
-  background: #188ce8;
-}
-
 .subscription-pic {
   fill: rgb(255, 255, 255);
   width: 24px;
@@ -893,31 +917,6 @@ img {
 
 .portfolio-item:last-child {
   margin-right: 0;
-}
-
-.portfolio-btn {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--header-color);
-  background: #f5f4fa;
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 6px 22px;
-  border: none;
-  transition-property: background, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-btn:hover,
-.portfolio-btn:focus {
-  color: var(--main-bgd-color);
-  background: var(--main-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -1192,7 +1191,6 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
-  margin-top: 30px;
   margin-left: 124px;
   transition-property: background, box-shadow;
   transition-duration: 250ms;
@@ -1208,6 +1206,7 @@ img {
 .checkbox {
   display: block;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .modal-input-wrapper {

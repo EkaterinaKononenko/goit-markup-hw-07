@@ -1,0 +1,21 @@
+.adress-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--main-color);
+  letter-spacing: 0.03em;
+  display: block;
+  margin-bottom: 20px;
+  transition-property: text-decoration-color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.adress-logo:hover,
+.adress-logo:focus {
+  text-decoration-color: var(--main-color);
+  border: 1px solid #ececec;
+}
+.adress-logo-decor {
+  color: var(--main-bgd-color);
+}
