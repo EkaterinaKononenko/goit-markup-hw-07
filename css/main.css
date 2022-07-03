@@ -161,17 +161,17 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-logo {
+.client__logo {
   width: 170px;
   height: 92px;
   margin-left: 30px;
 }
 
-.client-logo:first-child {
+.client__logo:first-child {
   margin-left: 0;
 }
 
-.client-logo-item {
+.client__logo__item {
   fill: currentColor;
 }
 
@@ -645,7 +645,7 @@ img {
   padding-bottom: 94px;
 }
 
-.client-title {
+.client__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -654,14 +654,14 @@ img {
   color: var(--header-color);
 }
 
-.client-list {
+.client__list {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 50px;
 }
 
-.client-link {
+.client__link {
   width: 100%;
   height: 100%;
   border: 1px solid #afb1b8;
@@ -676,8 +676,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-link:hover,
-.client-link:focus {
+.client__link:hover,
+.client__link:focus {
   border-color: #2196f3;
   color: #2196f3;
 }
