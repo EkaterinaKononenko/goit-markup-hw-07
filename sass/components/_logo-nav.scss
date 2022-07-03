@@ -1,4 +1,4 @@
-.logo-nav {
+.nav__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -14,4 +14,10 @@
   transition-property: text-decoration-color, border, border-width;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__logo:hover,
+.nav__logo:focus {
+  text-decoration-color: var(--main-color);
+  border: 1px solid #ececec;
+  border-width: 100%;
 }
