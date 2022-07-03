@@ -8,7 +8,7 @@
   letter-spacing: 0.03em;
   width: 100%;
 }
-.team-title {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -24,24 +24,24 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-title:hover,
-.team-title:focus {
+.team__title:hover,
+.team__title:focus {
   text-decoration-line: underline;
   text-decoration-color: var(--main-color);
 }
-.team-list {
+.team__list {
   display: flex;
 }
-.team-list:nth-child(1n) {
+.team__list:nth-child(1n) {
   margin-left: 0;
 }
 .team-list:nth-child(3n) {
   margin-right: 0;
 }
-.team-photo + .team-photo {
+.team__photo + .team__photo {
   margin-left: 30px;
 }
-.team-photo {
+.team__photo {
   display: block;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -50,13 +50,13 @@
 .team-position {
   text-align: center;
 }
-.team-describe {
+.team__wrapper {
   background-color: var(--main-bgd-color);
   margin-top: -5px;
   padding: 30px 32px;
 }
 
-.team-participant {
+.team__title__participant {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -70,12 +70,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-participant:hover,
-.team-participant:focus {
+.team__title__participant:hover,
+.team__title__participant:focus {
   text-decoration-line: underline;
   text-decoration-color: var(--main-color);
 }
-.team-position {
+.team__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -88,47 +88,8 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-position:hover,
-.team-position:focus {
+.team__text:hover,
+.team__text:focus {
   text-decoration-line: underline;
   text-decoration-color: var(--main-color);
-}
-.social-sites {
-  display: flex;
-  justify-content: center;
-}
-.social-sites-item {
-  width: 44px;
-  height: 44px;
-  margin-left: 10px;
-}
-.social-sites-item:first-child {
-  margin-left: 0;
-}
-.social-sites-link {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: var(--main-bgd-color);
-  color: #afb1b8;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-sites-link:hover,
-.social-sites-link:focus {
-  background-color: var(--main-color);
-  color: #ffffff;
-}
-.social-items-insta,
-.social-items-twitter,
-.social-items-fb,
-.social-items-in {
-  fill: currentColor;
 }
